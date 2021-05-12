@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "esports-guides"
+    }
+  },
+  "defaultProject": "esports-guides",
+  "cli": {
+    "analytics": "a3f2a5e1-c855-4ae2-8459-dfd4f160087d"
+  }
 }

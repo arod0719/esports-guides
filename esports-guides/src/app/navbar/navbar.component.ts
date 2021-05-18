@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
 
   navLinks: any[];
-  activeLinkIndex = -1; 
+  activeLinkIndex = -1;
 
-  constructor(private router: Router) { 
+  constructor(private router: Router) {
     this.navLinks = [
       {
           label: 'Home',
@@ -21,7 +21,15 @@ export class NavbarComponent implements OnInit {
           label: 'Game',
           link: './game',
           index: 1
-      }, 
+      }, {
+          label: 'Player',
+          link: './player',
+          index: 2
+      }, {
+          label: 'Teams',
+          link: './teams',
+          index: 3
+      },
   ];
   }
 

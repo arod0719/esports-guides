@@ -9,16 +9,21 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
 import { GameComponent } from './game/game.component';
 import { HomeComponent } from './home/home.component';
+import { PlayerComponent } from './player/player.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TeamsComponent } from './teams/teams.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GameComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    PlayerComponent,
+    TeamsComponent
   ],
   imports: [
     AppRoutingModule,
@@ -28,7 +33,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserAnimationsModule,
     MatGridListModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

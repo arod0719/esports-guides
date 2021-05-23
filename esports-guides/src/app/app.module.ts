@@ -15,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { PlayerComponent } from './player/player.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TeamsComponent } from './teams/teams.component';
+import { SenseConverterComponent } from './sense-converter/sense-converter.component';
+import { AddGameComponent } from './add-game/add-game.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { TeamsComponent } from './teams/teams.component';
     HomeComponent,
     NavbarComponent,
     PlayerComponent,
-    TeamsComponent
+    TeamsComponent,
+    SenseConverterComponent,
+    AddGameComponent
   ],
   imports: [
     AppRoutingModule,

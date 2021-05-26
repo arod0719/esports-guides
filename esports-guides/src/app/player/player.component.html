@@ -31,6 +31,12 @@
     <td mat-cell *matCellDef="let player"> {{player.monitor}} </td>
   </ng-container>
 
+  <!-- Sensitivity Column -->
+  <ng-container matColumnDef="sensitivity">
+    <th mat-header-cell *matHeaderCellDef> Sensitivity(DPI, Windows, Game) </th>
+    <td mat-cell *matCellDef="let player"> {{player.sensitivity}} </td>
+  </ng-container>
+
   <tr mat-header-row *matHeaderRowDef="dataColumns"></tr>
   <tr mat-row *matRowDef="let myRowData; columns: dataColumns"></tr>
 </table>

@@ -1,14 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Player, Game, Team } from './player.model';
-
-  export interface PlayerData {
-    mouse: string;
-    keyboard: string;
-    headset: string;
-    monitor: string;
-    sensitivity: string;
-  }
-
+@Component({
+  selector: 'app-player',
+  templateUrl: './player.component.html',
+  styleUrls: ['./player.component.css']
+})
   export class PlayerComponent implements OnInit {
     dataColumns: string[] = ['mouse', 'keyboard', 'headset', 'monitor', 'sensitivity'];
     dataSource = PLAYER_DATA;
@@ -23,12 +19,8 @@ import { Player, Game, Team } from './player.model';
   }
 
 
-  const PLAYER_DATA: PlayerData[] = [
-    {mouse: "Razer DeathAdder", keyboard: "Corsair K95", headset: "Logitech G95", monitor: "Dell AW5125", sensitivity: "1000, 4, 25"}
+  const PLAYER_DATA: Player[] = [
+    {mouse: "Razer DeathAdder", keyboard: "Corsair K95", headset: "Logitech G95", monitor: "Dell AW5125", sensitivity: "1000, 4, 25", name: "Alex", team: Team.Cloud9, game: Game.RocketLeague}
     ];
 
-@Component({
-  selector: 'app-player',
-  templateUrl: './player.component.html',
-  styleUrls: ['./player.component.css']
-})
+

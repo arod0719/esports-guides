@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Player, Game, Team } from './card.model';
+import { Player, Game, Team } from './player.model';
 
   export interface PlayerData {
     mouse: string;

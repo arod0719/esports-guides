@@ -1,7 +1,7 @@
 export enum Game {RocketLeague, LeagueOfLegends, CS:GO}
 export enum Team {Cloud9, TSM, TeamLiquid}
 
-export class Card {
+export class Player {
   public name: Name;
   public game: Game;
   public team: Team;

@@ -1,34 +1,39 @@
 <mat-grid-list cols="2" rowHeight="2:1">
   <mat-grid-tile>
     <!--<mat-card class="game-title-card">
-    <img mat-card-image src="https://rocketleague.media.zestyio.com/rl_home_f2p-launch_shop_10367.jpg" alt="Rocket League Photo" />
-  </mat-card>-->
+      <img mat-card-image src="https://rocketleague.media.zestyio.com/rl_home_f2p-launch_shop_10367.jpg" alt="Rocket League Photo" />
+    </mat-card>-->
     <img src="https://rocketleague.media.zestyio.com/rl_home_f2p-launch_shop_10367.jpg" alt="Rocket League" class="game-image" />
   </mat-grid-tile>
   <mat-grid-tile>
     <mat-card class="game-title-card">
       <mat-card-header>
-        <mat-card-title class="game-title">Rocket League</mat-card-title>
+        <mat-card-title class="game-title">{{game.name}}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
         <br />
         <p>
-          This is rocket league. I guess some people still play this competitively...
+          {{game.description}}
         </p>
       </mat-card-content>
     </mat-card>
   </mat-grid-tile>
-  <mat-grid-tile colspan="2">
-    <h1 class="player-title">One Man Army</h1>
-    <div class="team-roster">
-      <div *ngFor="let player of players" style="display:inline">
-        <mat-card class="player-card">
-          <a [title]="player.name" [routerLink]="['/player',player.name]">
-            <img mat-card-image src="https://tiermaker.com/images/avatars/karmajuney/karmajuney.jpg" alt="Who is this guy?" class="player-image" />
-            <mat-card-title>{{player.name}}</mat-card-title>
-          </a>
-        </mat-card>
+  <div *ngFor="let team of game.teams">
+    <mat-grid-tile colspan="2">
+      <a [title]="team.name" [routerLink]="['/team',team.name]">
+        <h1 class="player-title">{{team.name}}</h1>
+      </a>
+      <div class="team-roster">
+        <div *ngFor="let player of team.players" style="display:inline">
+          <mat-card class="player-card">
+            <a [title]="player.name" [routerLink]="['/player',player.name]">
+              <img mat-card-image src="https://tiermaker.com/images/avatars/karmajuney/karmajuney.jpg" alt="Who is this guy?" class="player-image" />
+              <mat-card-title>{{player.name}}</mat-card-title>
+            </a>
+          </mat-card>
+        </div>
       </div>
-    </div>
-  </mat-grid-tile>
+    </mat-grid-tile>
+  </div>
+
 </mat-grid-list>

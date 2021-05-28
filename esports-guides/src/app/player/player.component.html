@@ -3,8 +3,17 @@
 
   <mat-card class="player-card">
     <img mat-card-image src="https://tiermaker.com/images/avatars/karmajuney/karmajuney.jpg" alt="Who is this guy?" class="player-image" />
-    <mat-card-title style="font-weight:bold">{{player.game}}<br></mat-card-title>
-    <mat-card-title style="font-size:20px">{{player.team}}</mat-card-title>
+    <mat-card-title style="font-weight:bold">
+      <a [title]="player.game" [routerLink]="['/game',player.game]">
+        {{player.game}}
+      </a>
+      <br>
+    </mat-card-title>
+    <mat-card-title style="font-size:20px">
+      <a [title]="player.team" [routerLink]="['/team',player.team]">
+        {{player.team}}
+      </a>
+    </mat-card-title>
   </mat-card>
 
   <table class="mat-elevation-z8">

@@ -1,17 +1,17 @@
-export enum Game {RocketLeague, LeagueOfLegends, CSGO}
-export enum Team {Cloud9, TSM, TeamLiquid}
+//export enum Game {RocketLeague, LeagueOfLegends, CSGO}
+//export enum Team {Cloud9, TSM, TeamLiquid}
 
 export class Player {
   public name: string;
-  public game: Game;
-  public team: Team;
+  public game: string;
+  public team: string;
   public mouse: string;
   public keyboard: string;
   public headset: string;
   public monitor: string;
   public sensitivity: string;
 
-  constructor(name: string, game: Game, team: Team, mouse: string, keyboard: string, headset: string, monitor: string, sensitivity: string) {
+  constructor(name: string, game: string, team: string, mouse: string, keyboard: string, headset: string, monitor: string, sensitivity: string) {
     this.name = name;
     this.game = game;
     this.team = team;

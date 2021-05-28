@@ -11,7 +11,7 @@ import { AddGameComponent } from './add-game/add-game.component';
 const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'game', component: GameComponent},
-    {path: 'player', component: PlayerComponent},
+    {path: 'player/:playerId', component: PlayerComponent},
     {path: 'teams', component: TeamsComponent},
     {path: 'convert', component: SenseConverterComponent},
     {path: 'request', component: AddGameComponent}

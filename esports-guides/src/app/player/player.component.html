@@ -1,42 +1,27 @@
-<b style="font-size:50px">This Guy <br> </b>
+<div *ngIf="player">
+  <b style="font-size:50px">{{player.name}} <br> </b>
 
-<mat-card class="player-card">
-  <img mat-card-image src="https://tiermaker.com/images/avatars/karmajuney/karmajuney.jpg" alt="Who is this guy?" class="player-image" />
-  <mat-card-title style="font-weight:bold">Rocket League<br></mat-card-title>
-  <mat-card-title style="font-size:20px">DePaul University</mat-card-title>
-</mat-card>
+  <mat-card class="player-card">
+    <img mat-card-image src="https://tiermaker.com/images/avatars/karmajuney/karmajuney.jpg" alt="Who is this guy?" class="player-image" />
+    <mat-card-title style="font-weight:bold">{{player.game}}<br></mat-card-title>
+    <mat-card-title style="font-size:20px">{{player.team}}</mat-card-title>
+  </mat-card>
 
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-  <!-- Mouse Column -->
-  <ng-container matColumnDef="mouse">
-    <th mat-header-cell *matHeaderCellDef> Mouse </th>
-    <td mat-cell *matCellDef="let player"> {{player.mouse}} </td>
-  </ng-container>
+  <table class="mat-elevation-z8">
+    <tr>
+      <th> Mouse </th>
+      <th> Keyboard </th>
+      <th> Headset </th>
+      <th> Monitor </th>
+      <th> Sensitivity(DPI, Windows, Game) </th>
+    </tr>
+    <tr>
+      <td style="max-width=100px"> {{player.mouse}} </td>
+      <td> {{player.keyboard}} </td>
+      <td> {{player.headset}} </td>
+      <td> {{player.monitor}} </td>
+      <td> {{player.sensitivity}} </td>
+    </tr>
+  </table>
+</div>
 
-  <!-- Keyboard Column -->
-  <ng-container matColumnDef="keyboard">
-    <th mat-header-cell *matHeaderCellDef> Keyboard </th>
-    <td mat-cell *matCellDef="let player"> {{player.keyboard}} </td>
-  </ng-container>
-
-  <!-- Headset Column -->
-  <ng-container matColumnDef="headset">
-    <th mat-header-cell *matHeaderCellDef> Headset </th>
-    <td mat-cell *matCellDef="let player"> {{player.headset}} </td>
-  </ng-container>
-
-  <!-- Monitor Column -->
-  <ng-container matColumnDef="monitor">
-    <th mat-header-cell *matHeaderCellDef> Monitor </th>
-    <td mat-cell *matCellDef="let player"> {{player.monitor}} </td>
-  </ng-container>
-
-  <!-- Sensitivity Column -->
-  <ng-container matColumnDef="sensitivity">
-    <th mat-header-cell *matHeaderCellDef> Sensitivity(DPI, Windows, Game) </th>
-    <td mat-cell *matCellDef="let player"> {{player.sensitivity}} </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="dataColumns"></tr>
-  <tr mat-row *matRowDef="let myRowData; columns: dataColumns"></tr>
-</table>

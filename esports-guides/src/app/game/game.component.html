@@ -21,22 +21,14 @@
   <mat-grid-tile colspan="2">
     <h1 class="player-title">One Man Army</h1>
     <div class="team-roster">
-      <mat-card class="player-card">
-        <img mat-card-image src="https://tiermaker.com/images/avatars/karmajuney/karmajuney.jpg" alt="Who is this guy?" class="player-image" />
-        <mat-card-title>Who</mat-card-title>
-      </mat-card>
-      <mat-card class="player-card">
-        <img mat-card-image src="https://tiermaker.com/images/avatars/karmajuney/karmajuney.jpg" alt="Who is this guy?" class="player-image" />
-        <mat-card-title>is</mat-card-title>
-      </mat-card>
-      <mat-card class="player-card">
-        <img mat-card-image src="https://tiermaker.com/images/avatars/karmajuney/karmajuney.jpg" alt="Who is this guy?" class="player-image" />
-        <mat-card-title>this</mat-card-title>
-      </mat-card>
-      <mat-card class="player-card">
-        <img mat-card-image src="https://tiermaker.com/images/avatars/karmajuney/karmajuney.jpg" alt="Who is this guy?" class="player-image" />
-        <mat-card-title>guy?</mat-card-title>
-      </mat-card>
+      <div *ngFor="let player of players" style="display:inline">
+        <mat-card class="player-card">
+          <a [title]="player.name" [routerLink]="['/player',player.name]">
+            <img mat-card-image src="https://tiermaker.com/images/avatars/karmajuney/karmajuney.jpg" alt="Who is this guy?" class="player-image" />
+            <mat-card-title>{{player.name}}</mat-card-title>
+          </a>
+        </mat-card>
+      </div>
     </div>
   </mat-grid-tile>
 </mat-grid-list>

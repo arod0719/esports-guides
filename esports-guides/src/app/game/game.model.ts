@@ -4,13 +4,19 @@ export class Game {
   name: string;
   description: string;
   teams: Team[];
+  imageURL: string;
 
   constructor(name: string, description: string, teams: Team[]) {
     this.name = name;
     this.description = description;
     this.teams = teams;
+    let imageMap = new Map();
+    imageMap.set("Rocket League", "https://rocketleague.media.zestyio.com/rl_home_f2p-launch_shop_10367.jpg");
+    imageMap.set("League of Legends", "https://wallpaperaccess.com/full/217097.jpg");
+    this.imageURL = imageMap.get(name);
   }
-}
+
+  }
 
 export var gameList: Game[] = [
   new Game("Rocket League", "This is rocket league. I guess some people still play this competitively...",

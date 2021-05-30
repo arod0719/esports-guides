@@ -1,1 +1,24 @@
-<p> idk why we want games that aren't rl lmao</p>
+<div class="request-form">
+
+    <h1> Request a Game </h1>
+
+    <form (ngSubmit)="submitGame()">
+        <mat-form-field>
+            <mat-label>Game Title</mat-label>
+            <input matInput required [(ngModel)] = "title" name="title" placeholder="Ex. Rocket League">
+        </mat-form-field>
+
+        <br />
+
+        <mat-form-field>
+            <mat-label>Why?</mat-label>
+            <textarea matInput required rows="5" cols="40" [(ngModel)] = "info" name="info" placeholder="Ex. I love this game because..."></textarea>
+        </mat-form-field>
+
+
+        <br />
+
+        <button mat-raised-button type="submit" color="primary">Submit</button>
+
+    </form>
+</div>

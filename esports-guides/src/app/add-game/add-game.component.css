@@ -1,0 +1,10 @@
+.request-form{
+    background-color: beige;
+    margin: auto;
+    text-align: center;
+}
+
+.request-form h1{
+    font-size: 40px;
+    margin-top: 10px;
+}

@@ -1,1 +1,50 @@
-<p>sense-converter will go here when i'm not lazy!!</p>
+<div class="sense-form">
+
+    <h1> Sensitivity Converter </h1>
+
+    <form (ngSubmit)="submitSense()">
+        <mat-form-field appearance="fill">
+            <mat-label ngDefaultControl>Games</mat-label>
+            <select [(ngModel)]="game1" name="game1" matNativeControl required>
+                <option value="csgo">Counter Strike - Global Offensive</option>
+                <option value="val">Valorant</option>
+                <option value="r6">Rainbow 6 Siege</option>
+            </select>
+        </mat-form-field>
+
+        <br />
+
+        <mat-form-field>
+            <mat-label>Sensitivity</mat-label>
+            <input matInput required [(ngModel)]="sensitivity" name="sensitivity" placeholder="Ex. Rocket League">
+        </mat-form-field>
+
+        <br />
+
+        <mat-divider></mat-divider>
+
+        <h2> Convert To: </h2>
+
+        <mat-form-field appearance="fill">
+            <mat-label ngDefaultControl>Games</mat-label>
+            <select [(ngModel)]="game2"  name="game2" matNativeControl required>
+                <option value="csgo">Counter Strike - Global Offensive</option>
+                <option value="val">Valorant</option>
+                <option value="r6">Rainbow 6 Siege</option>
+            </select>
+        </mat-form-field>
+
+
+        <br />
+
+        <button mat-raised-button type="submit" color="primary">Submit</button>
+
+        <br />
+        <br />
+
+        <div style="font-size: 25px" *ngIf="showAnswer">
+            <input matInput readonly id="answer" name="answer" [(ngModel)]="answer">
+        </div>
+
+    </form>
+</div>

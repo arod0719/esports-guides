@@ -1,0 +1,15 @@
+.sense-form{
+    background-color: beige;
+    margin: auto;
+    text-align: center;
+}
+
+.sense-form h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.sense-form label{
+    font-size: 40px;
+    margin-top: 10px;
+}

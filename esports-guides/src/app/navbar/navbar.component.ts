@@ -17,28 +17,16 @@ export class NavbarComponent implements OnInit {
         label: 'Home',
         link: '',
         index: 0
-      }, {
-        label: 'Games',
-        link: './game',
-        index: 1
-      }, {
-        label: 'Players',
-        link: './player',
-        index: 2
-      }, {
-        label: 'Teams',
-        link: './teams',
-        index: 3
-      },
+      }, 
       {
         label: 'Sensitivity Converter',
         link: './convert',
-        index: 4
+        index: 1
       },
       {
         label: 'Request Game',
         link: './request',
-        index: 5
+        index: 2
       },
     ];
   }

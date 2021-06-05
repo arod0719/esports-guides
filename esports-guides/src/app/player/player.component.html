@@ -2,7 +2,7 @@
   <b style="font-size:50px">{{player.name}} <br> </b>
 
   <mat-card class="player-card">
-    <img mat-card-image src="https://tiermaker.com/images/avatars/karmajuney/karmajuney.jpg" alt="Who is this guy?" class="player-image" />
+    <img mat-card-image src="{{player.imageURL}}" alt="" class="player-image" />
     <mat-card-title style="font-weight:bold">
       <a [title]="player.game" [routerLink]="['/game',player.game]">
         {{player.game}}

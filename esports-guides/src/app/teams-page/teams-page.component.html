@@ -1,0 +1,25 @@
+<div *ngFor="let team of teams">
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+      <!--<mat-card class="team-title-card">
+        <img mat-card-image src="https://rocketleague.media.zestyio.com/rl_home_f2p-launch_shop_10367.jpg" alt="Rocket League Photo" />
+      </mat-card>-->
+      <img src={{team.imageURL}} alt={{team.name}} class="team-image" />
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="team-title-card">
+        <mat-card-header>
+          <mat-card-title class="team-title">
+            <a [title]="team.name" [routerLink]="['/team',team.name]">
+              {{team.name}}
+            </a>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <br />
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+</div>

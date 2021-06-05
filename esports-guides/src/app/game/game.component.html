@@ -27,7 +27,7 @@
         <div *ngFor="let player of team.players" style="display:inline">
           <mat-card class="player-card">
             <a [title]="player.name" [routerLink]="['/player',player.name]">
-              <img mat-card-image src="https://tiermaker.com/images/avatars/karmajuney/karmajuney.jpg" alt="Who is this guy?" class="player-image" />
+              <img mat-card-image src="{{player.imageURL}}" alt="Who is this guy?" class="player-image" />
               <mat-card-title>{{player.name}}</mat-card-title>
             </a>
           </mat-card>

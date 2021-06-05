@@ -27,14 +27,14 @@ export var gameList: Game[] = [
           new Player("Lovelace", "Rocket League", "DePaul University", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "7.0"),
           new Player("Vengeancex3", "Rocket League", "DePaul University", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0")
         ],
-        "NA"),
+        ""),
       new Team("Cloud9",
         [
           new Player("KarmaJuney", "Rocket League", "DePaul University", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "4.0"),
           new Player("Lovelace", "Rocket League", "DePaul University", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "7.0"),
           new Player("Vengeancex3", "Rocket League", "DePaul University", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0")
         ],
-        "NA")
+        "")
     ]
   ),
   new Game("League of Legends", "The biggest esports game ever. Not that I know whats happening half the time...",
@@ -45,7 +45,16 @@ export var gameList: Game[] = [
           new Player("Lovelace", "Rocket League", "DePaul University", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "7.0"),
           new Player("Vengeancex3", "Rocket League", "DePaul University", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0")
         ],
-        "NA")
+        ""),
+      new Team("Cloud9",
+        [
+          new Player("Fudge", "League of Legends", "Cloud9", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "4.0"),
+          new Player("Blaber", "League of Legends", "Cloud9", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "4.0"),
+          new Player("Perkz", "League of Legends", "Cloud9", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "4.0"),
+          new Player("K1ng", "League of Legends", "Cloud9", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "4.0"),
+          new Player("Vulcan", "League of Legends", "Cloud9", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "4.0")
+        ],
+        "")
     ]
   )
 ];

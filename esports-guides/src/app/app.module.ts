@@ -23,6 +23,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TeamsComponent } from './teams/teams.component';
 import { SenseConverterComponent } from './sense-converter/sense-converter.component';
 import { AddGameComponent } from './add-game/add-game.component';
+import { TeamsPageComponent } from './teams-page/teams-page.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AddGameComponent } from './add-game/add-game.component';
     PlayerComponent,
     TeamsComponent,
     SenseConverterComponent,
-    AddGameComponent
+    AddGameComponent,
+    TeamsPageComponent
   ],
   imports: [
     AppRoutingModule,

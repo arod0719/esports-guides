@@ -5,6 +5,7 @@ import { GameComponent } from './game/game.component';
 import { HomeComponent } from './home/home.component';
 import { PlayerComponent } from './player/player.component';
 import { TeamsComponent } from './teams/teams.component';
+import { TeamsPageComponent } from './teams-page/teams-page.component';
 import { SenseConverterComponent } from './sense-converter/sense-converter.component';
 import { AddGameComponent } from './add-game/add-game.component';
 
@@ -14,7 +15,8 @@ const routes: Routes = [
     {path: 'player/:playerId', component: PlayerComponent},
     {path: 'team/:teamId', component: TeamsComponent},
     {path: 'convert', component: SenseConverterComponent},
-    {path: 'request', component: AddGameComponent}
+    {path: 'request', component: AddGameComponent},
+    {path: 'teams-page', component: TeamsPageComponent},
 ];
 
 @NgModule({

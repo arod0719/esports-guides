@@ -18,13 +18,13 @@
       </mat-card-content>
     </mat-card>
   </mat-grid-tile>
-  <mat-grid-tile colspan="2">
+  <mat-grid-tile colspan="2" rowspan="2">
     <h1 class="player-title">Players</h1>
     <div class="team-roster">
       <div *ngFor="let player of team.players" style="display:inline">
         <mat-card class="player-card">
           <a [title]="player.name" [routerLink]="['/player',player.name]">
-            <img mat-card-image src="{{player.imageURL}}" alt="Who is this guy?" class="player-image" />
+            <img mat-card-image src="{{player.imageURL}}" alt="Missing image" class="player-image" />
             <mat-card-title>{{player.name}}</mat-card-title>
           </a>
           <b>{{player.game}}</b>

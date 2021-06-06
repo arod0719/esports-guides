@@ -24,15 +24,16 @@ export var gameList: Game[] = [
       new Team("DePaul University",
         [
           new Player("KarmaJuney", "Rocket League", "DePaul University", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "4.0"),
-          new Player("Lovelace", "Rocket League", "DePaul University", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "7.0"),
-          new Player("Vengeancex3", "Rocket League", "DePaul University", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0")
+          new Player("BlackWraith", "Rocket League", "DePaul University", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "7.0"),
+          new Player("Jaco", "Rocket League", "DePaul University", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0"),
+          new Player("Shacookie", "Rocket League", "DePaul University", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0"),
         ],
         ""),
       new Team("Cloud9",
         [
-          new Player("KarmaJuney", "Rocket League", "DePaul University", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "4.0"),
-          new Player("Lovelace", "Rocket League", "DePaul University", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "7.0"),
-          new Player("Vengeancex3", "Rocket League", "DePaul University", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0")
+          new Player("Gimmick", "Rocket League", "Cloud9", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0"),
+          new Player("Fireburner", "Rocket League", "Cloud9", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0"),
+          new Player("SquishyMuffinz", "Rocket League", "Cloud9", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0"),
         ],
         "")
     ]
@@ -41,9 +42,11 @@ export var gameList: Game[] = [
     [
       new Team("DePaul University",
         [
-          new Player("KarmaJuney", "Rocket League", "DePaul University", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "4.0"),
-          new Player("Lovelace", "Rocket League", "DePaul University", "Korsair", "Korsair", "HyperXCloud", "HP OMEN", "7.0"),
-          new Player("Vengeancex3", "Rocket League", "DePaul University", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0")
+          new Player("Lovelace", "League of Legends", "DePaul University", "Razer Basilisk Ultimate", "Corsair k95 Platinum XT", "Bose QC35 II", "Alienware AW2518H", "25"),
+          new Player("Kamcha", "League of Legends", "DePaul University", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0"),
+          new Player("Kingamazin", "League of Legends", "DePaul University", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0"),
+          new Player("AspiringDropout", "League of Legends", "DePaul University", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0"),
+          new Player("Rzayers", "League of Legends", "DePaul University", "Logitech", "Royal Kludge", "HyperXCloud", "HP OMEN", "5.0"),
         ],
         ""),
       new Team("Cloud9",
